@@ -10,4 +10,13 @@ class TestController extends Controller
     {
         return "Welcome ".$name;
     }
+    public function home()
+    {
+        $info = array(
+            'name'  => 'Rafat Hossain',
+            'email' => 'rafat@gmail.com',
+            'phone' => '01876903613'
+        );
+        return view('home', compact('info'));
+    }
 }

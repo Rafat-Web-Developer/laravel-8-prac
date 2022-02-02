@@ -21,4 +21,5 @@ Route::get('/', function () {
 // --------------------------
 //    My Custom Route
 // ---------------------------
-Route::get('/home/{name?}', [TestController::class, 'index']);
+// Route::get('/home/{name?}', [TestController::class, 'index']);
+Route::get('/home', [TestController::class, 'home']);
