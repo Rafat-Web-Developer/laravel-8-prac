@@ -7,6 +7,7 @@
     <title>Home</title>
 </head>
 <body>
+    <x-header :welcome="$welcome"/>
     <h1>This is Home Page</h1>
     <h2>My all information</h2>
     <p>Name : {{ $info['name'] }}</p>
