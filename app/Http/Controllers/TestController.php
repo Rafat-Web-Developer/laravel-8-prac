@@ -24,4 +24,12 @@ class TestController extends Controller
         );
         return view('home', compact('info', 'welcome'));
     }
+    public function welcome()
+    {
+        $info = array(
+            'name' => 'Rafat Hossain',
+            'email' => 'rafat@gmail.com'
+        );
+        return view('welcome', compact('info'));
+    }
 }
