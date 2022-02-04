@@ -24,3 +24,5 @@ Route::get('/', [TestController::class, 'welcome']);
 // ---------------------------
 // Route::get('/home/{name?}', [TestController::class, 'index']);
 Route::get('/home', [TestController::class, 'home']);
+Route::get('/user', [TestController::class, 'user']);
+Route::post('/userForm', [TestController::class, 'userForm'])->name('user.form');

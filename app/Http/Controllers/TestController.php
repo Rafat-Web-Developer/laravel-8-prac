@@ -32,4 +32,18 @@ class TestController extends Controller
         );
         return view('welcome', compact('info'));
     }
+
+    public function user(Request $request) {
+        if ($request->path() == 'user') {
+            return view('user');
+        }else {
+            return "Wrong User";
+        }
+    }
+    public function userForm(Request $request)
+    {
+        return $request->all();
+    }
+
+
 }
